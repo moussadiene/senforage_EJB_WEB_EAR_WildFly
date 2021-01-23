@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_0.xsd ">
+  <persistence-unit name="SenforageEjb_UP"  transaction-type="RESOURCE_LOCAL">
+  
+  <jta-data-source>java:/Senforage_ejbDS</jta-data-source>
+  	
+    <class>com.senforage_ejb.entities.Client</class>
+    <class>com.senforage_ejb.entities.Village</class>
+    <class>com.senforage_ejb.entities.User</class>
+    
+  	<properties>
+  		<property name="hibernate.hbm2ddl.auto" value="update"/> 
+  	</properties>
+  	</persistence-unit>
+</persistence>
